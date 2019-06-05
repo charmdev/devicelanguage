@@ -40,5 +40,10 @@ public class DeviceLanguage extends Extension{
 		
 	}
 	
+	public static String getCountry () {
+		
+		return Locale.getDefault().getCountry();
+		
+	}
 	
 }

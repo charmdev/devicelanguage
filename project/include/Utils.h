@@ -6,6 +6,7 @@ namespace devicelanguage {
 	
 	
 	const char* GetLang();
+	const char* GetCountry();
 	
 	
 }

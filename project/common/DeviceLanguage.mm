@@ -12,5 +12,9 @@ namespace devicelanguage {
 		
 	}
 	
+	const char* GetCountry() {
+		NSString *countryCode = [[NSLocale currentLocale] objectForKey:NSLocaleCountryCode];
+		return [countryCode UTF8String];
+	}
 	
 }

@@ -22,6 +22,12 @@ static value devicelanguage_get_lang () {
 }
 DEFINE_PRIM (devicelanguage_get_lang, 0);
 
+static value devicelanguage_get_country () {
+	
+	return alloc_string(GetCountry());
+	
+}
+DEFINE_PRIM (devicelanguage_get_country, 0);
 
 
 extern "C" void devicelanguage_main () {
